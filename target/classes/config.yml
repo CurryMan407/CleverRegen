@@ -1,0 +1,49 @@
+#------------
+#
+#Clever Regen - Your solution to regeneration problems
+#
+#Made by CurryMan
+#
+#------------
+
+#GUIDE
+#1. Add the plugin
+#2. Do /cr wand - You will be given a stone axe
+#3. Use that axe to select position 1 and 2 for a region.
+#--> LEFT CLICK to set Position 1
+#--> RIGHT CLICK to set Position 2
+#4. Once you've selected the region, do /cr save (name)
+#--> replace (name) with the name of the region - you can choose
+#5. Head over to the folder for this plugin, then into 'Regions'. There should be a .yml file
+#   generated, for example 'yourRegionName.yml'
+#6. Open the file, and configure it to your needs.
+#7. Click save, and head back to the game and run /cr reload (although restarting is recommended)
+#8. Everything should work now. To test, use /cr forceregen
+
+#COMMANDS
+#/cr wand -> Gives you the selection wand
+#/cr save <name> -> Saves the selected region as a .yml file in the CleverRegen folder
+#/cr forceregen <name> -> Regenerates the region specified based on the .yml file for it.
+#/cr reload -> Reloads the plugin without restarting the server.
+#/cr list -> Lists all regions
+#/cr tp <name> -> tp to that region
+#/cr delete <name> -> delete region
+#/cr help -> Display all commands
+
+
+#NOTE - In case of any problems, restarting the server is recommended.
+
+#Configurable messages (Only Minecraft Colour Codes support for now):
+messages:
+  wand-given: "&6Clever&eRegen &f» &aYou have been given the CleverRegen wand!"
+  pos1-set: "&6Clever&eRegen &f» &aPosition 1 set!"
+  pos2-set: "&6Clever&eRegen &f» &aPosition 2 set!"
+  region-saved: "&6Clever&eRegen &f» &aRegion {region} saved!"
+  region-regenerated: "&6Clever&eRegen &f» &aRegion {region} has been regenerated!"
+  region-deleted: "&6Clever&eRegen &f» &aRegion {region} deleted!"
+  region-not-found: "&6Clever&eRegen &f» &cRegion {region} not found!"
+  reload: "&6Clever&eRegen &f» &aCleverRegen config and regions reloaded."
+  actionbar-message: "&6Region &e%region% &6regenerated successfully"
+
+wand-name: "&eCleverRegen Selection Wand"
+#IMPORTANT - This is what sets the wand apart from other stone axes in the game.

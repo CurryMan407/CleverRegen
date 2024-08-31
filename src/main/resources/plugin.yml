@@ -1,0 +1,12 @@
+name: CleverRegen
+version: '${project.version}'
+main: org.curryman.CleverRegen
+api-version: '1.17'
+commands:
+  cr:
+    description: CleverRegen command
+    aliases: [cleverregen]
+permissions:
+  cleverregen.admin:
+    description: Allows access to all CleverRegen commands
+    default: op

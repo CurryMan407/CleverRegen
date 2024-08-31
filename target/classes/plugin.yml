@@ -1,0 +1,13 @@
+name: CleverRegen
+version: '1.0'
+main: org.curryman.CleverRegen
+api-version: '1.17'
+commands:
+  cr:
+    description: CleverRegen command
+    usage: /cr <wand|save|reload|forceregen|delete|list|tp|help>
+    aliases: [cleverregen]
+permissions:
+  cleverregen.admin:
+    description: Allows access to all CleverRegen commands
+    default: op
